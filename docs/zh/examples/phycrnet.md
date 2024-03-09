@@ -6,23 +6,23 @@
 
     ``` sh
     # linux
-    wget -nc https://paddle-org.bj.bcebos.com/paddlescience/datasets/PhyCRNet/burgers_1501x2x128x128.mat -P ./data/
+    wget -nc https://paddle-org.bj.bcebos.com/paddlescience/datasets/PhyCRNet/burgers_2001x2x128x128.mat -P ./data/
 
     # windows
-    # curl https://paddle-org.bj.bcebos.com/paddlescience/datasets/PhyCRNet/burgers_1501x2x128x128.mat --output ./data/burgers_1501x2x128x128.mat
+    # curl https://paddle-org.bj.bcebos.com/paddlescience/datasets/PhyCRNet/burgers_2001x2x128x128.mat --output ./data/burgers_2001x2x128x128.mat
 
-    python main.py DATA_PATH=./data/burgers_1501x2x128x128.mat
+    python main.py DATA_PATH=./data/burgers_2001x2x128x128.mat
     ```
 
 === "模型评估命令"
 
     ``` sh
     # linux
-    wget -nc https://paddle-org.bj.bcebos.com/paddlescience/datasets/PhyCRNet/burgers_1501x2x128x128.mat -P ./data/
+    wget -nc https://paddle-org.bj.bcebos.com/paddlescience/datasets/PhyCRNet/burgers_2001x2x128x128.mat -P ./data/
     # windows
-    # curl https://paddle-org.bj.bcebos.com/paddlescience/datasets/PhyCRNet/burgers_1501x2x128x128.mat --output ./data/burgers_1501x2x128x128.mat
+    # curl https://paddle-org.bj.bcebos.com/paddlescience/datasets/PhyCRNet/burgers_2001x2x128x128.mat --output ./data/burgers_2001x2x128x128.mat
 
-    python main.py mode=eval DATA_PATH=./data/burgers_1501x2x128x128.mat EVAL.pretrained_model_path=https://paddle-org.bj.bcebos.com/paddlescience/models/phycrnet/phycrnet_burgers.pdparams
+    python main.py mode=eval DATA_PATH=./data/burgers_2001x2x128x128.mat EVAL.pretrained_model_path=https://paddle-org.bj.bcebos.com/paddlescience/models/phycrnet/phycrnet_burgers.pdparams
     ```
 | 预训练模型  | 指标 |
 |:--| :--|
